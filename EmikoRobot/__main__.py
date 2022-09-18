@@ -83,7 +83,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/11b5922a33de9968cedfe.jpg)
+✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/72991fad3de48ba4e02fb.jpg)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -107,8 +107,11 @@ buttons = [
     ],
 ]
 
+       Inlenekeyboarbutton(
+            text="Support", url=f"https://t.me/gabut_mutualan")
 
-HELP_STRINGS = """
+
+    HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
 
@@ -786,7 +789,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi, i'm alive.",
+                "🔥 Hi, i'm alive 🔥.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
